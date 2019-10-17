@@ -1,0 +1,30 @@
+#container {
+  width: 938px;
+  margin: 0 auto;
+  background: #db3023;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 70px;
+  background: #000;
+}
+header .logo {
+  text-align: center;
+  width: 40%;
+}
+header .main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+}

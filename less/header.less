@@ -1,0 +1,16 @@
+header {
+  .flex(@justifyContent: space-between);
+  height: @header-height;
+  background: @black;
+  .logo {
+    text-align: center;
+    width: 40%;
+  }
+  .main-menu {
+    .flex(@justifyContent: space-around, @alignItems: center);
+    width: 60%;
+    .link {
+      // line-height: @header-height;
+    }
+  }
+}
