@@ -140,9 +140,20 @@ h6 {
   font-size: 2rem;
 }
 #container {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   background: #EBEBEB;
+}
+@media (max-width: 800px) {
+  #container {
+    width: 100%;
+    background: #C1282B;
+  }
+}
+@media (max-width: 500px) {
+  #container {
+    background: blue;
+  }
 }
 a {
   text-decoration: none;
