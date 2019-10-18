@@ -1,8 +1,17 @@
 // This is where we keep our global variables.
 #container {
-  width: @main-width;
+  max-width: @main-width;
   margin: 0 auto;
   background: @white;
+
+  @media @tablet {
+    width: 100%;
+    background: @red;
+  }
+
+  @media @phone {
+    background: blue;
+  }
 }
 
 a {
