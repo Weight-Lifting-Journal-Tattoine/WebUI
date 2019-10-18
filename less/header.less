@@ -1,7 +1,8 @@
 header {
   .flex(@justifyContent: space-between);
   height: @header-height;
-  background: @black;
+  background: fade(@black, 30%);
+
   .logo {
     text-align: center;
     width: 40%;
@@ -11,6 +12,8 @@ header {
     width: 60%;
     .link {
       // line-height: @header-height;
+      color: @white;
+      font-size: 1.4rem;
     }
   }
 }
