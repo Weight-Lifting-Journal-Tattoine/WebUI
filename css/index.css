@@ -278,9 +278,34 @@ header .main-menu .link {
 #contact-container .team {
   background: #991c27;
   color: #ebebeb;
-  padding-left: 20px;
+  padding: 0 20px;
 }
 #contact-container .team h2 {
   font-size: 2.8rem;
   padding: 50px 0;
+}
+#contact-container .team .team-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-between;
+  flex-wrap: wrap;
+}
+#contact-container .team .team-container .member {
+  background: #ebebeb;
+  color: #252627;
+  width: 20%;
+  margin: 10px;
+  height: 40%;
+  border-radius: 5px;
+}
+#contact-container .team .team-container .member img {
+  padding-top: 5px;
+  width: 100%;
+}
+#contact-container .team .team-container .member .team-text {
+  padding: 10px;
+}
+#contact-container .team .team-container .member .team-text p {
+  font-size: 1.3rem;
+  padding: 5px 0;
 }
