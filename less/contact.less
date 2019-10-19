@@ -1,0 +1,106 @@
+#contact-container {
+  background: @red;
+
+  .contact-section {
+    background: @white;
+
+    .contact-heading {
+      display: flex;
+      align-items: center;
+      background: @black;
+      color: @white;
+      height: 15vh;
+    }
+
+    h1 {
+      font-size: 3rem;
+      padding: 50px 20px;
+    }
+
+    form {
+      margin-top: 100px;
+      margin-left: 20px;
+      height: 100%;
+      padding-bottom: 50px;
+
+      .form-controller {
+        width: 70%;
+        background: white;
+        border: none;
+        border-bottom: 1px solid @black;
+        border-radius: 5px;
+        outline: none;
+        color: @black;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+      }
+
+      input {
+        height: 60px;
+        padding-left: 10px;
+      }
+
+      textarea {
+        height: 200px;
+        padding: 10px 10px;
+      }
+
+      .submit {
+        height: auto;
+        padding: 10px 50px;
+        background: @red;
+        margin-top: 30px;
+        border-radius: 10px;
+        color: #f3f3f3;
+        font-size: 1.5rem;
+        transition: 1s;
+
+        &:hover {
+          background: darken(@red, 10%);
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+
+  .team {
+    background: @red;
+    color: @white;
+    padding: 0 20px;
+
+    h2 {
+      font-size: 2.8rem;
+      padding: 50px 0;
+    }
+
+    .team-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: space-between;
+      flex-wrap: wrap;
+
+      .member {
+        background: @white;
+        color: @black;
+        width: 20%;
+        margin: 10px;
+        height: 40%;
+        border-radius: 5px;
+
+        img {
+          padding-top: 5px;
+          width: 100%;
+        }
+
+        .team-text {
+          padding: 10px;
+
+          p {
+            font-size: 1.3rem;
+            padding: 5px 0;
+          }
+        }
+      }
+    }
+  }
+}

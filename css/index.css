@@ -221,3 +221,93 @@ header .main-menu .link {
 .services .box p {
   font-style: italic;
 }
+#contact-container {
+  background: #991c27;
+}
+#contact-container .contact-section {
+  background: #ebebeb;
+}
+#contact-container .contact-section .contact-heading {
+  display: flex;
+  align-items: center;
+  background: #252627;
+  color: #ebebeb;
+  height: 15vh;
+}
+#contact-container .contact-section h1 {
+  font-size: 3rem;
+  padding: 50px 20px;
+}
+#contact-container .contact-section form {
+  margin-top: 100px;
+  margin-left: 20px;
+  height: 100%;
+  padding-bottom: 50px;
+}
+#contact-container .contact-section form .form-controller {
+  width: 70%;
+  background: white;
+  border: none;
+  border-bottom: 1px solid #252627;
+  border-radius: 5px;
+  outline: none;
+  color: #252627;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+#contact-container .contact-section form input {
+  height: 60px;
+  padding-left: 10px;
+}
+#contact-container .contact-section form textarea {
+  height: 200px;
+  padding: 10px 10px;
+}
+#contact-container .contact-section form .submit {
+  height: auto;
+  padding: 10px 50px;
+  background: #991c27;
+  margin-top: 30px;
+  border-radius: 10px;
+  color: #f3f3f3;
+  font-size: 1.5rem;
+  transition: 1s;
+}
+#contact-container .contact-section form .submit:hover {
+  background: #6e141c;
+  font-size: 1.8rem;
+}
+#contact-container .team {
+  background: #991c27;
+  color: #ebebeb;
+  padding: 0 20px;
+}
+#contact-container .team h2 {
+  font-size: 2.8rem;
+  padding: 50px 0;
+}
+#contact-container .team .team-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-between;
+  flex-wrap: wrap;
+}
+#contact-container .team .team-container .member {
+  background: #ebebeb;
+  color: #252627;
+  width: 20%;
+  margin: 10px;
+  height: 40%;
+  border-radius: 5px;
+}
+#contact-container .team .team-container .member img {
+  padding-top: 5px;
+  width: 100%;
+}
+#contact-container .team .team-container .member .team-text {
+  padding: 10px;
+}
+#contact-container .team .team-container .member .team-text p {
+  font-size: 1.3rem;
+  padding: 5px 0;
+}
