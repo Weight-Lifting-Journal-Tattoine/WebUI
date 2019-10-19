@@ -221,3 +221,66 @@ header .main-menu .link {
 .services .box p {
   font-style: italic;
 }
+#contact-container {
+  background: #991c27;
+}
+#contact-container .contact-section {
+  background: #ebebeb;
+}
+#contact-container .contact-section .contact-heading {
+  display: flex;
+  align-items: center;
+  background: #252627;
+  color: #ebebeb;
+  height: 8vh;
+}
+#contact-container .contact-section h1 {
+  padding-left: 20px;
+  font-size: 3rem;
+  padding-top: 20px;
+}
+#contact-container .contact-section form {
+  margin-top: 100px;
+  margin-left: 20px;
+  height: 65vh;
+}
+#contact-container .contact-section form .form-controller {
+  width: 70%;
+  background: white;
+  border: none;
+  border-bottom: 1px solid #252627;
+  border-radius: 5px;
+  outline: none;
+  color: #252627;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+#contact-container .contact-section form input {
+  height: 60px;
+}
+#contact-container .contact-section form textarea {
+  height: 200px;
+}
+#contact-container .contact-section form .submit {
+  height: auto;
+  padding: 10px 50px;
+  background: #991c27;
+  margin-top: 30px;
+  border-radius: 10px;
+  color: #f3f3f3;
+  font-size: 1.5rem;
+  transition: 1s;
+}
+#contact-container .contact-section form .submit:hover {
+  background: #6e141c;
+  font-size: 1.8rem;
+}
+#contact-container .team {
+  background: #991c27;
+  color: #ebebeb;
+  padding-left: 20px;
+}
+#contact-container .team h2 {
+  font-size: 2.8rem;
+  padding: 50px 0;
+}
