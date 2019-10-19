@@ -172,8 +172,22 @@ header {
   background: rgba(37, 38, 39, 0.3);
 }
 header .logo {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   width: 40%;
+  padding: 0 20px 0 0;
+}
+header .logo .logo-text {
+  font-size: 4rem;
+  text-shadow: #ebebeb 1px 1px 0;
+}
+header .logo .logo-text span {
+  color: #252627;
+}
+header .logo .logo-text span:first-child {
+  color: #991c27;
 }
 header .main-menu {
   display: flex;
@@ -185,6 +199,28 @@ header .main-menu {
 header .main-menu .link {
   color: #ebebeb;
   font-size: 1.4rem;
+  text-shadow: #252627 1px 1px 0;
+}
+header .main-menu .button {
+  background: rgba(37, 38, 39, 0.6);
+  box-shadow: rgba(235, 235, 235, 0.35) 0px 0px 5px;
+  padding: 8px 20px;
+  border-radius: 7px;
+  font-weight: bold;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+header .main-menu .button:hover {
+  background: rgba(37, 38, 39, 0.8);
+  text-decoration: none;
+  box-shadow: none;
+}
+header .main-menu .signup {
+  background: #991c27;
+  color: #ebebeb;
+}
+header .main-menu .signup:hover {
+  background: #a21320;
+  text-decoration: none;
 }
 .headline {
   height: 550px;
@@ -197,6 +233,152 @@ header .main-menu .link {
   font-size: 8rem;
   color: #252627;
   text-shadow: #ebebeb 3px 3px 0;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: #252627;
+  color: #ebebeb;
+  padding: 35px 10px 50px 10px;
+}
+footer .box {
+  width: 33%;
+}
+footer .box h2 {
+  color: #991c27;
+  padding: 0 0 5px 0;
+}
+footer .box p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+footer .box ul li {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+footer .box .footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+footer .box .footer-nav .link {
+  font-size: 1.4rem;
+  color: #ebebeb;
+  line-height: 2.6rem;
+}
+.headline {
+  padding: 0 0 0 10px;
+  box-sizing: border-box;
+}
+.headline .description {
+  width: 30%;
+  font-size: 3rem;
+  font-weight: normal;
+  font-family: Alfa Slab One;
+  color: #ebebeb;
+  line-height: 3.5rem;
+  text-shadow: #252627 2px 2px 0;
+  padding: 40px 0 0 0;
+}
+.services-home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  margin: 0 0 40px 0;
+}
+.services-home .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 33%;
+  padding: 0 10px;
+}
+.services-home .box img {
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+  margin: 0 0 10px 0;
+}
+.services-home .box h2 {
+  color: #efbf3b;
+  text-shadow: #252627 1px 1px 0;
+  margin: 0 0 5px 0;
+}
+.services-home .box p {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #252627;
+  line-height: 1.6rem;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+.services-home .box .learn-more {
+  background: #efbf3b;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+.services-home .box .learn-more:hover {
+  text-decoration: none;
+}
+.services-home .box .learn-more:active {
+  color: #991c27;
+}
+.customer-reviews {
+  padding: 10px 10px 70px;
+}
+.customer-reviews .section-title {
+  font-size: 3rem;
+  color: #252627;
+  margin: 0 0 25px 0;
+  text-align: center;
+}
+.customer-reviews .reviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+.customer-reviews .reviews .review {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  width: 45%;
+}
+.customer-reviews .reviews .review .customer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 70%;
+  padding: 0 40px 0 15px;
+}
+.customer-reviews .reviews .review .customer-info h3 {
+  font-size: 1.6rem;
+  color: #991c27;
+  padding: 0 0 2px 0;
+}
+.customer-reviews .reviews .review .customer-info .location {
+  font-size: 1.2rem;
+  color: #777;
+  padding: 0 0 7px 0;
+}
+.customer-reviews .reviews .review .customer-info .comment {
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.6rem;
+  font-style: italic;
+}
+.customer-reviews .reviews .review img {
+  width: 30%;
+  border-radius: 50%;
 }
 .slogan h1 {
   font-size: 2.5rem;

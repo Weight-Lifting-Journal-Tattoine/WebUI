@@ -4,8 +4,23 @@ header {
   background: fade(@black, 30%);
 
   .logo {
-    text-align: center;
+    .flex(
+      @flexDirection: column,
+      @justifyContent: center,
+      @alignItems: flex-end
+    );
     width: 40%;
+    padding: 0 20px 0 0;
+    .logo-text {
+      font-size: 4rem;
+      text-shadow: @white 1px 1px 0;
+      span {
+        color: @black;
+        &:first-child {
+          color: @red;
+        }
+      }
+    }
   }
   .main-menu {
     .flex(@justifyContent: space-around, @alignItems: center);
@@ -14,6 +29,28 @@ header {
       // line-height: @header-height;
       color: @white;
       font-size: 1.4rem;
+      text-shadow: @black 1px 1px 0;
+    }
+    .button {
+      background: fade(@black, 60%);
+      box-shadow: fade(@white, 35%) 0px 0px 5px;
+      padding: 8px 20px;
+      border-radius: 7px;
+      font-weight: bold;
+      transition: background 0.3s, box-shadow 0.3s;
+      &:hover {
+        background: fade(@black, 80%);
+        text-decoration: none;
+        box-shadow: none;
+      }
+    }
+    .signup {
+      background: @red;
+      color: @white;
+      &:hover {
+        background: saturate(@red, 10%);
+        text-decoration: none;
+      }
     }
   }
 }
