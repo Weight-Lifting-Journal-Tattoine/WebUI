@@ -28,8 +28,7 @@
       margin: 0 0 10px 0;
     }
     h2 {
-      color: @secondary;
-      text-shadow: @black 1px 1px 0;
+      color: @red;
       margin: 0 0 5px 0;
     }
     p {
@@ -45,8 +44,10 @@
       padding: 6px 10px;
       border-radius: 5px;
       font-size: 1.2rem;
+      transition: background 0.3s;
       &:hover {
         text-decoration: none;
+        background: saturate(@secondary, 10%);
       }
       &:active {
         color: @red;

@@ -204,10 +204,10 @@ header .main-menu .link {
 header .main-menu .button {
   background: rgba(37, 38, 39, 0.6);
   box-shadow: rgba(235, 235, 235, 0.35) 0px 0px 5px;
-  padding: 8px 20px;
+  padding: 12px 20px;
   border-radius: 7px;
   font-weight: bold;
-  transition: background 0.3s, box-shadow 0.3s;
+  transition: all 0.3s;
 }
 header .main-menu .button:hover {
   background: rgba(37, 38, 39, 0.8);
@@ -247,12 +247,13 @@ footer .box {
   width: 33%;
 }
 footer .box h2 {
-  color: #991c27;
+  color: #efbf3b;
   padding: 0 0 5px 0;
 }
 footer .box p {
   font-size: 1.4rem;
   line-height: 1.8rem;
+  padding: 0 20px 0 0;
 }
 footer .box ul li {
   font-size: 1.4rem;
@@ -306,8 +307,7 @@ footer .box .footer-nav .link {
   margin: 0 0 10px 0;
 }
 .services-home .box h2 {
-  color: #efbf3b;
-  text-shadow: #252627 1px 1px 0;
+  color: #991c27;
   margin: 0 0 5px 0;
 }
 .services-home .box p {
@@ -323,9 +323,11 @@ footer .box .footer-nav .link {
   padding: 6px 10px;
   border-radius: 5px;
   font-size: 1.2rem;
+  transition: background 0.3s;
 }
 .services-home .box .learn-more:hover {
   text-decoration: none;
+  background: #fac430;
 }
 .services-home .box .learn-more:active {
   color: #991c27;
