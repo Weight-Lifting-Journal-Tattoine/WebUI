@@ -3,34 +3,72 @@ header {
   height: @header-height;
   background: fade(@black, 30%);
 
+  @media @tablet {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background: fade(@black, 10%);
+    margin: 0 0 20px 0;
+  }
+
+  @media @phone {
+    width: 100%;
+
+  }
+
   .logo {
-    .flex(
-      @flexDirection: column,
+    .flex(@flexDirection: column,
       @justifyContent: center,
-      @alignItems: flex-end
-    );
+      @alignItems: flex-end);
     width: 40%;
     padding: 0 20px 0 0;
+
+    @media @tablet {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+
+    @media @phone {}
+
     .logo-text {
       font-size: 4rem;
       text-shadow: @white 1px 1px 0;
+
       span {
         color: @black;
+
         &:first-child {
           color: @red;
         }
       }
     }
   }
+
   .main-menu {
     .flex(@justifyContent: space-around, @alignItems: center);
     width: 60%;
+
+    @media @tablet {
+      flex-direction: column;
+      width: 100%;
+
+      a {
+        padding: 10px 0;
+      }
+    }
+
+    @media @phone {
+      width: 100%;
+    }
+
     .link {
       // line-height: @header-height;
       color: @white;
       font-size: 1.4rem;
       text-shadow: @black 1px 1px 0;
     }
+
     .button {
       background: fade(@black, 60%);
       box-shadow: fade(@white, 35%) 0px 0px 5px;
@@ -38,19 +76,27 @@ header {
       border-radius: 7px;
       font-weight: bold;
       transition: all 0.3s;
+
+      @media @tablet {
+        margin: 10px 0;
+      }
+
       &:hover {
         background: fade(@black, 80%);
         text-decoration: none;
         box-shadow: none;
       }
     }
+
     .signup {
       background: @red;
       color: @white;
+
       &:hover {
         background: saturate(@red, 10%);
         text-decoration: none;
       }
     }
+
   }
 }
