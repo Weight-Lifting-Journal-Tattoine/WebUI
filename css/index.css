@@ -382,28 +382,88 @@ footer .box .footer-nav .link {
   width: 30%;
   border-radius: 50%;
 }
+.product_headline {
+  padding: 0 0 0 10px;
+  box-sizing: border-box;
+  height: 550px;
+}
+.product_headline .description {
+  width: 30%;
+  font-size: 3rem;
+  font-weight: normal;
+  font-family: Alfa Slab One;
+  color: #ebebeb;
+  line-height: 3.5rem;
+  text-shadow: #252627 2px 2px 0;
+  padding: 40px 0 0 0;
+}
+.product_headline h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  font-size: 8rem;
+  color: #252627;
+  text-shadow: #ebebeb 3px 3px 0;
+}
+.slogan {
+  height: 225px;
+}
 .slogan h1 {
   font-size: 2.5rem;
 }
 .slogan p {
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  color: #991c27;
 }
 .services {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: stretch;
+  width: 100%;
+  margin: 0 0 40px 0;
 }
 .services .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   width: 33%;
-  height: 250px;
+  padding: 0 10px;
+}
+.services .box img {
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+  margin: 0 0 10px 0;
 }
 .services .box h2 {
-  color: #efbf3b;
+  color: #991c27;
+  margin: 0 0 5px 0;
 }
 .services .box p {
-  font-style: italic;
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #252627;
+  line-height: 1.6rem;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+.services .box .learn-more {
+  background: #efbf3b;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background 0.3s;
+}
+.services .box .learn-more:hover {
+  text-decoration: none;
+  background: #fac430;
+}
+.services .box .learn-more:active {
+  color: #991c27;
 }
 #contact-container {
   background: #991c27;
