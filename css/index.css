@@ -652,6 +652,14 @@ footer .box .footer-nav .link {
 }
 #contact-container {
   background: #991c27;
+  width: 1000px;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  #contact-container {
+    margin: 0;
+    width: 100%;
+  }
 }
 #contact-container .contact-section {
   background: #ebebeb;
