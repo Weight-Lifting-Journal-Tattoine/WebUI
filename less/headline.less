@@ -1,12 +1,36 @@
 .headline {
   height: 550px;
-
+  padding: 0 0 0 10px;
+  box-sizing: border-box;
+  @media @tablet {
+    height: 300px;
+  }
   h1 {
     .flex(@flexDirection: column);
     font-size: 8rem;
     color: @black;
     text-shadow: @white 3px 3px 0;
-    span {
+    @media @tablet {
+      font-size: 6rem;
+      padding: 60px 0 0 0;
+      text-shadow: @white 2px 2px 0;
+    }
+    @media @phone {
+      align-items: flex-end;
+      padding: 60px 15px 0 0;
+    }
+  }
+
+  .description {
+    font-size: 3rem;
+    font-weight: normal;
+    font-family: @alfaSlabOne;
+    color: @white;
+    line-height: 3.5rem;
+    text-shadow: @black 2px 2px 0;
+    padding: 40px 0 0 0;
+    @media @tablet {
+      display: none;
     }
   }
 }

@@ -2,26 +2,52 @@ footer {
   .flex();
   background: @black;
   color: @white;
-  padding: 35px 10px 50px 10px;
+  padding: 35px 0px 50px 0px;
+  max-width: @main-width;
+  margin: 0 auto;
+
+  @media @tablet {
+    flex-direction: column;
+    align-items: center;
+    // width: 100%;
+  }
+
+  @media @phone {
+  }
+
   .box {
+    text-align: center;
     width: 33%;
+
+    @media @tablet {
+      width: 50%;
+      margin: 10px;
+    }
+
+    @media @phone {
+    }
+
     h2 {
       color: @secondary;
       padding: 0 0 5px 0;
     }
+
     p {
       font-size: 1.4rem;
       line-height: 1.8rem;
       padding: 0 20px 0 0;
     }
+
     ul {
       li {
         font-size: 1.4rem;
         line-height: 2.6rem;
       }
     }
+
     .footer-nav {
       .flex(@flexDirection: column);
+
       .link {
         font-size: 1.4rem;
         color: @white;
