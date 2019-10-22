@@ -7,24 +7,34 @@
     .contact-heading {
       display: flex;
       align-items: center;
+      // justify-content: center;
       background: @black;
       color: @white;
       height: 15vh;
+
+      @media @tablet {
+        justify-content: center;
+      }
     }
 
     h1 {
       font-size: 3rem;
-      padding: 50px 20px;
+      padding-left: 20px;
     }
 
     form {
       margin-top: 100px;
-      margin-left: 20px;
+      margin-left: 20%;
       height: 100%;
       padding-bottom: 50px;
 
+      @media @tablet {
+        margin-top: 50px;
+        margin-left: 12%;
+      }
+
       .form-controller {
-        width: 70%;
+        width: 80%;
         background: white;
         border: none;
         border-bottom: 1px solid @black;
@@ -33,6 +43,10 @@
         color: @black;
         font-size: 1.3rem;
         margin-bottom: 20px;
+
+        @media @tablet {
+          width: 85%;
+        }
       }
 
       input {
@@ -47,17 +61,23 @@
 
       .submit {
         height: auto;
-        padding: 10px 50px;
+        padding: 20px 80px;
         background: @red;
-        margin-top: 30px;
+        margin-top: 20px;
+        margin-left: 25%;
         border-radius: 10px;
         color: #f3f3f3;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         transition: 1s;
+
+        @media @tablet {
+          width: 90%;
+          margin-left: 0;
+        }
 
         &:hover {
           background: darken(@red, 10%);
-          font-size: 1.8rem;
+          font-size: 1.9rem;
         }
       }
     }
@@ -71,6 +91,10 @@
     h2 {
       font-size: 2.8rem;
       padding: 50px 0;
+
+      @media @tablet {
+        text-align: center;
+      }
     }
 
     .team-container {
@@ -83,13 +107,18 @@
         background: @white;
         color: @black;
         width: 20%;
-        margin: 10px;
+        margin: 10px 10px 30px;
         height: 40%;
         border-radius: 5px;
+
+        @media @tablet {
+          width: 40%;
+        }
 
         img {
           padding-top: 5px;
           width: 100%;
+          height: 110%;
         }
 
         .team-text {
