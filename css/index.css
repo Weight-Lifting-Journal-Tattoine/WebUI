@@ -149,14 +149,7 @@ h6 {
 @media (max-width: 800px) {
   #container {
     width: 100%;
-    border: 5px solid red;
     background: none;
-  }
-}
-@media (max-width: 500px) {
-  #container {
-    width: 100%;
-    border: 5px solid blue;
   }
 }
 a {
@@ -579,7 +572,9 @@ footer .box .footer-nav .link {
   align-items: stretch;
   background: #252627;
   color: #ebebeb;
-  padding: 35px 10px 50px 10px;
+  padding: 35px 0px 50px 0px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 @media (max-width: 800px) {
   .product_footer {
