@@ -1,35 +1,33 @@
-.headline {
-  padding: 0 0 0 10px;
-  box-sizing: border-box;
-  .description {
-    width: 30%;
-    font-size: 3rem;
-    font-weight: normal;
-    font-family: @alfaSlabOne;
-    color: @white;
-    line-height: 3.5rem;
-    text-shadow: @black 2px 2px 0;
-    padding: 40px 0 0 0;
-  }
-}
-
 .services-home {
   .flex(@justifyContent: space-between);
   width: 100%;
   margin: 0 0 40px 0;
+  @media @tablet {
+    flex-direction: column;
+  }
   .box {
     .flex(@flexDirection: column, @alignItems: center);
     width: 33%;
     padding: 0 10px;
+    @media @tablet {
+      width: 100%;
+      margin: 0 0 30px 0;
+    }
     img {
       width: 100%;
       border-radius: 10px;
       height: 180px;
       margin: 0 0 10px 0;
+      @media @tablet {
+        width: 272px;
+      }
     }
     h2 {
       color: @red;
       margin: 0 0 5px 0;
+      @media @tablet {
+        margin: 0 0 10px 0;
+      }
     }
     p {
       font-weight: normal;
@@ -38,6 +36,10 @@
       line-height: 1.6rem;
       margin: 0 0 10px 0;
       text-align: center;
+      @media @tablet {
+        width: 75%;
+        margin: 0 0 15px 0;
+      }
     }
     .learn-more {
       background: @secondary;
@@ -66,14 +68,20 @@
   }
   .reviews {
     .flex(@justifyContent:center);
-
+    @media @tablet {
+      flex-direction: column;
+    }
     .review {
       .flex(@justifyContent: center);
       width: 45%;
+      @media @tablet {
+        width: 100%;
+        margin: 0 0 20px 0;
+      }
       .customer-info {
         .flex(@flexDirection: column, @justifyContent: center);
         width: 70%;
-        padding: 0 40px 0 15px;
+        padding: 0 20px 0 15px;
         h3 {
           font-size: 1.6rem;
           color: @red;
@@ -92,8 +100,12 @@
         }
       }
       img {
-        width: 30%;
+        width: 132px;
+        height: 132px;
         border-radius: 50%;
+        @media @tablet {
+          width: 125px;
+        }
       }
     }
   }

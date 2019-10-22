@@ -13,13 +13,14 @@ header {
 
   @media @phone {
     width: 100%;
-
   }
 
   .logo {
-    .flex(@flexDirection: column,
+    .flex(
+      @flexDirection: column,
       @justifyContent: center,
-      @alignItems: flex-end);
+      @alignItems: flex-end
+    );
     width: 40%;
     padding: 0 20px 0 0;
 
@@ -27,14 +28,20 @@ header {
       flex-direction: column;
       width: 100%;
       align-items: center;
+      margin: 10px 0;
     }
 
-    @media @phone {}
+    @media @phone {
+    }
 
     .logo-text {
       font-size: 4rem;
       text-shadow: @white 1px 1px 0;
-
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
       span {
         color: @black;
 
@@ -97,6 +104,5 @@ header {
         text-decoration: none;
       }
     }
-
   }
 }
