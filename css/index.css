@@ -540,8 +540,15 @@ footer .box .footer-nav .link {
 }
 @media (max-width: 800px) {
   .product_headline h1 {
-    width: 100%;
-    align-items: center;
+    font-size: 6rem;
+    padding: 60px 0 0 0;
+    text-shadow: #ebebeb 2px 2px 0;
+  }
+}
+@media (max-width: 500px) {
+  .product_headline h1 {
+    align-items: flex-end;
+    padding: 60px 15px 0 0;
   }
 }
 .slogan {
@@ -552,6 +559,7 @@ footer .box .footer-nav .link {
   .slogan {
     width: 100%;
     height: auto;
+    margin: 25px 0 0 0;
   }
 }
 @media (max-width: 500px) {
@@ -652,7 +660,7 @@ footer .box .footer-nav .link {
 }
 #contact-container {
   background: #991c27;
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
 }
 @media (max-width: 800px) {
@@ -729,7 +737,7 @@ footer .box .footer-nav .link {
 }
 @media (max-width: 800px) {
   #contact-container .contact-section form .submit {
-    width: 90%;
+    width: 85%;
     margin-left: 0;
   }
 }
