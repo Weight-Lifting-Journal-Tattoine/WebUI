@@ -1,19 +1,20 @@
 #contact-container {
   background: @red;
-  width: 100%;
+  .full-width();
   margin: 0 auto;
 
   @media @tablet {
     margin: 0;
-    width: 100%;
+    .full-width();
   }
 
   .contact-section {
     background: @white;
 
     .contact-heading {
-      display: flex;
-      align-items: center;
+      .flex(@alignItems: center);
+      // display: flex;
+      // align-items: center;
       // justify-content: center;
       background: @black;
       color: @white;
@@ -71,9 +72,9 @@
         padding: 20px 80px;
         background: @red;
         margin-top: 20px;
-        margin-left: 25%;
+        margin-left: 30%;
         border-radius: 10px;
-        color: #f3f3f3;
+        color: @white;
         font-size: 1.7rem;
         transition: 1s;
 
@@ -83,8 +84,9 @@
         }
 
         &:hover {
-          background: darken(@red, 10%);
-          font-size: 1.9rem;
+          background: darken(@red, 8%);
+          font-size: 2rem;
+          padding: 22px 82px;
         }
       }
     }
@@ -105,9 +107,10 @@
     }
 
     .team-container {
-      display: flex;
-      justify-content: space-around;
-      align-items: space-between;
+      .flex(@justifyContent: space-around, @alignItems: space-between);
+      // display: flex;
+      // justify-content: space-around;
+      // align-items: space-between;
       flex-wrap: wrap;
 
       .member {
@@ -124,7 +127,7 @@
 
         img {
           padding-top: 5px;
-          width: 100%;
+          .full-width();
           height: 110%;
         }
 
@@ -138,5 +141,9 @@
         }
       }
     }
+  }
+
+  footer {
+    max-width: 100%;
   }
 }

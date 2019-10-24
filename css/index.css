@@ -1,3 +1,6 @@
+.full-width {
+  width: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -674,6 +677,8 @@ footer .box .footer-nav .link {
 }
 #contact-container .contact-section .contact-heading {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   background: #252627;
   color: #ebebeb;
@@ -729,9 +734,9 @@ footer .box .footer-nav .link {
   padding: 20px 80px;
   background: #991c27;
   margin-top: 20px;
-  margin-left: 25%;
+  margin-left: 30%;
   border-radius: 10px;
-  color: #f3f3f3;
+  color: #ebebeb;
   font-size: 1.7rem;
   transition: 1s;
 }
@@ -742,8 +747,9 @@ footer .box .footer-nav .link {
   }
 }
 #contact-container .contact-section form .submit:hover {
-  background: #6e141c;
-  font-size: 1.9rem;
+  background: #77161e;
+  font-size: 2rem;
+  padding: 22px 82px;
 }
 #contact-container .team {
   background: #991c27;
@@ -761,6 +767,7 @@ footer .box .footer-nav .link {
 }
 #contact-container .team .team-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: space-between;
   flex-wrap: wrap;
@@ -789,4 +796,7 @@ footer .box .footer-nav .link {
 #contact-container .team .team-container .member .team-text p {
   font-size: 1.3rem;
   padding: 5px 0;
+}
+#contact-container footer {
+  max-width: 100%;
 }
