@@ -387,27 +387,31 @@ footer .box .footer-nav .link {
 @media (max-width: 800px) {
   .services-home .box {
     width: 100%;
-    margin: 0 0 30px 0;
+    margin: 0 0 50px 0;
   }
 }
 .services-home .box img {
   width: 100%;
   border-radius: 10px;
-  height: 180px;
   margin: 0 0 10px 0;
 }
 @media (max-width: 800px) {
   .services-home .box img {
-    width: 272px;
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .services-home .box img {
+    width: 80%;
   }
 }
 .services-home .box h2 {
   color: #991c27;
-  margin: 0 0 5px 0;
+  margin: 0 0 10px 0;
 }
 @media (max-width: 800px) {
   .services-home .box h2 {
-    margin: 0 0 10px 0;
+    font-size: 3rem;
   }
 }
 .services-home .box p {
@@ -422,6 +426,8 @@ footer .box .footer-nav .link {
   .services-home .box p {
     width: 75%;
     margin: 0 0 15px 0;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
   }
 }
 .services-home .box .learn-more {
@@ -438,6 +444,19 @@ footer .box .footer-nav .link {
 .services-home .box .learn-more:active {
   color: #991c27;
 }
+@media (max-width: 800px) {
+  .services-home .box .learn-more {
+    font-size: 1.8rem;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 500px) {
+  .services-home .box .learn-more {
+    width: 80%;
+    padding: 15px 0;
+    text-align: center;
+  }
+}
 .customer-reviews {
   padding: 10px 10px 70px;
 }
@@ -446,6 +465,11 @@ footer .box .footer-nav .link {
   color: #252627;
   margin: 0 0 25px 0;
   text-align: center;
+}
+@media (max-width: 800px) {
+  .customer-reviews .section-title {
+    font-size: 4rem;
+  }
 }
 .customer-reviews .reviews {
   display: flex;
@@ -484,16 +508,32 @@ footer .box .footer-nav .link {
   color: #991c27;
   padding: 0 0 2px 0;
 }
+@media (max-width: 800px) {
+  .customer-reviews .reviews .review .customer-info h3 {
+    font-size: 2rem;
+  }
+}
 .customer-reviews .reviews .review .customer-info .location {
   font-size: 1.2rem;
   color: #777;
   padding: 0 0 7px 0;
+}
+@media (max-width: 800px) {
+  .customer-reviews .reviews .review .customer-info .location {
+    font-size: 1.6rem;
+  }
 }
 .customer-reviews .reviews .review .customer-info .comment {
   font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.6rem;
   font-style: italic;
+}
+@media (max-width: 800px) {
+  .customer-reviews .reviews .review .customer-info .comment {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
 }
 .customer-reviews .reviews .review img {
   width: 132px;
