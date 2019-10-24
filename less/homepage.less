@@ -14,26 +14,26 @@
 
     @media @tablet {
       width: 100%;
-      margin: 0 0 30px 0;
+      margin: 0 0 50px 0;
     }
 
     img {
       width: 100%;
       border-radius: 10px;
-      height: 180px;
       margin: 0 0 10px 0;
-
       @media @tablet {
-        width: 272px;
+        width: 60%;
+      }
+      @media @phone {
+        width: 80%;
       }
     }
 
     h2 {
       color: @red;
-      margin: 0 0 5px 0;
-
+      margin: 0 0 10px 0;
       @media @tablet {
-        margin: 0 0 10px 0;
+        font-size: 3rem;
       }
     }
 
@@ -48,6 +48,8 @@
       @media @tablet {
         width: 75%;
         margin: 0 0 15px 0;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
       }
     }
 
@@ -66,6 +68,16 @@
       &:active {
         color: @red;
       }
+
+      @media @tablet {
+        font-size: 1.8rem;
+        padding: 10px 20px;
+      }
+      @media @phone {
+        width: 80%;
+        padding: 15px 0;
+        text-align: center;
+      }
     }
   }
 }
@@ -78,6 +90,9 @@
     color: @black;
     margin: 0 0 25px 0;
     text-align: center;
+    @media @tablet {
+      font-size: 4rem;
+    }
   }
 
   .reviews {
@@ -105,12 +120,18 @@
           font-size: 1.6rem;
           color: @red;
           padding: 0 0 2px 0;
+          @media @tablet {
+            font-size: 2rem;
+          }
         }
 
         .location {
           font-size: 1.2rem;
           color: #777;
           padding: 0 0 7px 0;
+          @media @tablet {
+            font-size: 1.6rem;
+          }
         }
 
         .comment {
@@ -118,6 +139,10 @@
           font-weight: normal;
           line-height: 1.6rem;
           font-style: italic;
+          @media @tablet {
+            font-size: 1.7rem;
+            line-height: 2.2rem;
+          }
         }
       }
 
