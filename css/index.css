@@ -363,6 +363,30 @@ footer .box .footer-nav .link {
   color: #ebebeb;
   line-height: 2.6rem;
 }
+.welcome {
+  padding: 0 1rem 1rem 1rem;
+}
+@media (max-width: 800px) {
+  .welcome {
+    display: none;
+  }
+}
+.welcome h2 {
+  font-size: 3.5rem;
+  color: #991c27;
+}
+.welcome h2 span {
+  color: #252627;
+}
+.welcome p {
+  padding: 1rem 0 0;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  width: 80%;
+}
+.welcome p:last-child {
+  padding: 1rem 0 4rem;
+}
 .services-home {
   display: flex;
   flex-direction: row;
@@ -408,6 +432,7 @@ footer .box .footer-nav .link {
 .services-home .box h2 {
   color: #991c27;
   margin: 0 0 10px 0;
+  text-align: center;
 }
 @media (max-width: 800px) {
   .services-home .box h2 {
@@ -436,6 +461,7 @@ footer .box .footer-nav .link {
   border-radius: 5px;
   font-size: 1.2rem;
   transition: background 0.3s;
+  margin: auto 0 0 0;
 }
 .services-home .box .learn-more:hover {
   text-decoration: none;
@@ -557,11 +583,6 @@ footer .box .footer-nav .link {
     align-items: center;
   }
 }
-@media (max-width: 500px) {
-  .product_headline {
-    width: 100%;
-  }
-}
 .product_headline .description {
   width: 30%;
   font-size: 3rem;
@@ -605,11 +626,6 @@ footer .box .footer-nav .link {
     margin: 25px 0 0 0;
   }
 }
-@media (max-width: 500px) {
-  .slogan {
-    width: 100%;
-  }
-}
 .slogan h1 {
   font-size: 2.5rem;
 }
@@ -632,12 +648,6 @@ footer .box .footer-nav .link {
     flex-direction: column;
   }
 }
-@media (max-width: 500px) {
-  .services {
-    width: 100%;
-    flex-direction: column;
-  }
-}
 .services .box {
   display: flex;
   flex-direction: column;
@@ -647,12 +657,6 @@ footer .box .footer-nav .link {
   padding: 0 10px;
 }
 @media (max-width: 800px) {
-  .services .box {
-    width: 100%;
-    padding: 5px 0;
-  }
-}
-@media (max-width: 500px) {
   .services .box {
     width: 100%;
     padding: 5px 0;
